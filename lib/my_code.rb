@@ -11,6 +11,6 @@ def reduce(arr, acc=0)
   arr.length.times {|i|
     acc = yield(acc, arr[i])
   }
-  return acc
+  return !!acc
 end
   
