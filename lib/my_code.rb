@@ -7,7 +7,7 @@ def map(arr)
   return result
 end
 
-def reduce(arr, acc=nil) 
+def reduce(arr, *acc) 
   arr.length.times {|i|
     acc = yield(acc, arr[i])
   }
