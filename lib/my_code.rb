@@ -8,7 +8,7 @@ def map(arr)
 end
 
 def reduce(arr, start = 0)
-  acc = arr.shift
+  acc = arr.shifta
   arr.length.times {|i|
     acc = yield(acc, arr[i+1])
   }
